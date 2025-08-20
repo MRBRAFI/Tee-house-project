@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+</head>
+<body>
+    <h1> Ami Vat Khaite jacchi </h1>
+    <caption>KI KI KHABO</caption>
+    <li>VAAT</li>
+    <li>ALU VORTA</li>
+    <li>PALONG SHAK</li>
+    <caption>Khabar</caption>\
+    <ul id="parent_container">
+    <li id="Calory">alu vaji</li>
+    <li class="deshi">maser vorta</li>
+    <li class="deshi">gorur gosto</li>
+    <li class="bideshi">burger</li>
+    <li class="bideshi">chicken nuggets</li>
+    <li class="bideshi">french fries</li>
+    <li class="bideshi">Kebab</li>
+    <li class="bideshi">potato with dips</li>
+    </ul>
+</body>
+<script>
+    const foreignFood = document.getElementsByClassName('bideshi');
+    for(const KhabarGula of foreignFood){
+        console.log(KhabarGula.innerHTML)
+    }
+    console.log(document.getElementById('Calory').innerHTML);
+    const banglaKhabar = document.getElementsByClassName('deshi');
+    for(const deshiKhabar of banglaKhabar){
+        console.log(deshiKhabar.innerHTML);
+    }
+
+</script>
+<script src="child.js"></script>
+</html>
